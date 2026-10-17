@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import {
   ArrowUpRight,
   Heart,
@@ -16,7 +18,7 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {/* Brand and description */}
           <div>
-            <a
+            <Link
               href="/"
               className="inline-flex items-center gap-2 rounded-lg text-lg font-bold tracking-tight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-color)]"
               aria-label="TechTulana Nepal home"
@@ -28,7 +30,7 @@ export function Footer() {
               <span>
                 TechTulana <span className="text-[var(--accent)]">Nepal</span>
               </span>
-            </a>
+            </Link>
 
             <p className="mt-3 max-w-sm text-sm leading-6 text-[var(--text-secondary)]">
               Compare product offers from supported Nepali online stores in one
@@ -43,30 +45,30 @@ export function Footer() {
 
             <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-3 text-sm">
               <li>
-                <a
+                <Link
                   href="/"
                   className="text-[var(--text-secondary)] transition-colors hover:text-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-color)]"
                 >
                   Home
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="/#compare"
                   className="text-[var(--text-secondary)] transition-colors hover:text-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-color)]"
                 >
                   Compare products
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a
+                <Link
                   href="/#how-it-works"
                   className="text-[var(--text-secondary)] transition-colors hover:text-[var(--accent)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-color)]"
                 >
                   How it works
-                </a>
+                </Link>
               </li>
             </ul>
 
